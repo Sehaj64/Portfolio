@@ -1,11 +1,11 @@
 export const portfolioData = {
   name: "Sehaj Kumar",
-  title: "Data Analyst | Tableau & Visual Analytics Expert | Data Warehousing Expert",
+  title: "AI & Data Engineer | GenAI & Agentic Workflows | Data Pipelines",
   email: "sehajpk3456@gmail.com",
   location: "Panipat, India",
   github: "https://github.com/Sehaj64",
   linkedin: "https://www.linkedin.com/in/sehaj-kumar-639448136/",
-  summary: "Results-driven Data Analyst and Tableau & Visual Analytics Expert with a proven track record of delivering 40% operational efficiency gains through GenAI automation and data-driven insights. Specialized in transforming complex datasets into high-impact visual narratives and actionable business strategies using SQL, Python, and advanced Tableau dashboarding.",
+  summary: "Results-driven AI & Data Engineer specializing in building scalable Generative AI applications, agentic workflows, and robust data pipelines. Proven track record of leveraging LLMs (Gemini, OpenAI) and advanced data modeling to automate complex business processes and deliver high-impact engineering solutions.",
   
   skills: [
     {

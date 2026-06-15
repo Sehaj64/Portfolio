@@ -14,13 +14,13 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block px-3 py-1 rounded-full bg-emerald-accent/10 text-emerald-accent text-xs font-bold tracking-widest uppercase mb-6 border border-emerald-accent/20">
-            Tableau & Visual Analytics Expert
+            AI & Data Engineer
           </span>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight max-w-4xl">
-            Transforming Complex Data into <span className="text-gradient">Strategic Business Value</span>.
+            Engineering <span className="text-gradient">Intelligent Systems</span> & Agentic Workflows.
           </h1>
           <p className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed">
-            I specialize in Data Warehousing, ETL pipelines, and high-impact BI dashboards that empower stakeholders to make real-time, evidence-based decisions.
+            I build scalable AI applications, predictive models, and robust data pipelines to automate complex business processes and solve real-world problems.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <Link 
