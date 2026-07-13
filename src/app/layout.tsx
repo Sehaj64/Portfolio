@@ -15,10 +15,10 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Sehaj Kumar | Data Analyst & BI Specialist",
-  description: "Senior Data Analyst specializing in Business Intelligence, Data Warehousing, and Advanced Analytics. Transforming complex data into strategic business value.",
+  description: "Data Analyst specializing in Business Intelligence, Data Warehousing, and Advanced Analytics. Transforming complex data into strategic business value.",
   openGraph: {
     title: "Sehaj Kumar | Data Analyst Portfolio",
-    description: "Senior Data Analyst specializing in BI and Data Warehousing.",
+    description: "Data Analyst specializing in BI and Data Warehousing.",
     url: "https://sehajkumar.com",
     siteName: "Sehaj Kumar Portfolio",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sehaj Kumar | Data Analyst Portfolio",
-    description: "Senior Data Analyst specializing in BI and Data Warehousing.",
+    description: "Data Analyst specializing in BI and Data Warehousing.",
     images: ["/og-image.png"],
   },
 };

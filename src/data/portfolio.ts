@@ -1,11 +1,11 @@
 export const portfolioData = {
   name: "Sehaj Kumar",
-  title: "AI & Data Engineer | GenAI & Agentic Workflows | Data Pipelines",
+  title: "Data Analyst | GenAI & Agentic Workflows | Data Pipelines",
   email: "sehajpk3456@gmail.com",
   location: "Panipat, India",
   github: "https://github.com/Sehaj64",
   linkedin: "https://www.linkedin.com/in/sehaj-kumar-639448136/",
-  summary: "Results-driven AI & Data Engineer specializing in building scalable Generative AI applications, agentic workflows, and robust data pipelines. Proven track record of leveraging LLMs (Gemini, OpenAI) and advanced data modeling to automate complex business processes and deliver high-impact engineering solutions.",
+  summary: "Results-driven Data Analyst specializing in building scalable Generative AI applications, agentic workflows, and robust data pipelines. Proven track record of leveraging LLMs (Gemini, OpenAI) and advanced data modeling to automate complex business processes and deliver high-impact engineering solutions.",
   
   skills: [
     {

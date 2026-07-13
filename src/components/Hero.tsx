@@ -14,7 +14,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block px-3 py-1 rounded-full bg-emerald-accent/10 text-emerald-accent text-xs font-bold tracking-widest uppercase mb-6 border border-emerald-accent/20">
-            AI & Data Engineer
+            Data Analyst
           </span>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight max-w-4xl">
             Engineering <span className="text-gradient">Intelligent Systems</span> & Agentic Workflows.
