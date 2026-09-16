@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CodeXml, UserRound, Mail } from "lucide-react";
+import { CodeXml, UserRound } from "lucide-react";
 
 import { portfolioData } from "@/data/portfolio";
 

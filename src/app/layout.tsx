@@ -14,18 +14,19 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Sehaj Kumar | Data Analyst & BI Specialist",
-  description: "Data Analyst specializing in Business Intelligence, Data Warehousing, and Advanced Analytics. Transforming complex data into strategic business value.",
+  metadataBase: new URL("https://portfolio-sehaj64s-projects.vercel.app"),
+  title: "Sehaj Kumar | Data Analytics Portfolio",
+  description: "SQL, Python, Power BI and Tableau projects exploring retail profitability, customer churn, data quality and AI prototypes.",
   openGraph: {
     title: "Sehaj Kumar | Data Analyst Portfolio",
-    description: "Data Analyst specializing in BI and Data Warehousing.",
-    url: "https://sehajkumar.com",
+    description: "Project findings, dashboards, source code and working demos.",
+    url: "https://portfolio-sehaj64s-projects.vercel.app",
     siteName: "Sehaj Kumar Portfolio",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "/projects/consumer-complaints.png",
+        width: 1203,
+        height: 670,
       },
     ],
     locale: "en_US",
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sehaj Kumar | Data Analyst Portfolio",
-    description: "Data Analyst specializing in BI and Data Warehousing.",
-    images: ["/og-image.png"],
+    description: "SQL, Python, Power BI and Tableau project case studies.",
+    images: ["/projects/consumer-complaints.png"],
   },
 };
 

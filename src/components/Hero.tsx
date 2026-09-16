@@ -17,10 +17,10 @@ export default function Hero() {
             Data Analyst
           </span>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight max-w-4xl">
-            Engineering <span className="text-gradient">Intelligent Systems</span> & Agentic Workflows.
+            Turning data into <span className="text-gradient">clear business insights.</span>
           </h1>
           <p className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed">
-            I build scalable AI applications, predictive models, and robust data pipelines to automate complex business processes and solve real-world problems.
+            I’m Sehaj Kumar, an AI and Data Science graduate. I build SQL analyses, dashboards and Python tools to investigate business questions and make reporting more reliable.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <Link 
@@ -36,6 +36,7 @@ export default function Hero() {
             >
               Get in Touch
             </Link>
+            <a href="/resume/Sehaj_Kumar_Data_Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-accent font-bold underline underline-offset-4">View resume (PDF)</a>
           </div>
         </motion.div>
       </div>

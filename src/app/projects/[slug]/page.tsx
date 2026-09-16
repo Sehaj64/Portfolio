@@ -5,8 +5,9 @@ import { notFound } from "next/navigation";
 import { CodeXml, ExternalLink, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import Image from "next/image";
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const project = portfolioData.projects.find((p) => p.id === slug);
   
@@ -22,7 +23,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = portfolioData.projects.find((p) => p.id === slug);
 
@@ -68,7 +69,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
               {project.title}
             </h1>
             
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-6">
               {content.links.github !== "#" && (
                 <a href={content.links.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold bg-white/5 hover:bg-white/10 px-6 py-3 rounded-lg border border-white/10 transition-all">
                   <CodeXml size={18} />
@@ -78,11 +79,20 @@ export default async function ProjectPage({ params }: { params: { slug: string }
               {content.links.demo !== "#" && (
                 <a href={content.links.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold bg-emerald-accent text-black hover:bg-emerald-accent/90 px-6 py-3 rounded-lg transition-all">
                   <ExternalLink size={18} />
-                  Live Demo
+                  {content.links.demoLabel}
                 </a>
               )}
             </div>
           </header>
+
+          {project.image && (
+            <figure className="mb-16">
+              <a href={project.image.src} target="_blank" rel="noopener noreferrer" aria-label="Open full-size dashboard screenshot">
+                <Image src={project.image.src} alt={project.image.alt} width={1203} height={670} sizes="(max-width: 768px) 100vw, 896px" className="w-full h-auto rounded-lg border border-white/10" />
+              </a>
+              <figcaption className="text-sm text-white/60 mt-4 leading-relaxed">{project.image.caption}</figcaption>
+            </figure>
+          )}
 
           <div className="space-y-16">
             {sections.map((section) => (
@@ -110,14 +120,14 @@ export default async function ProjectPage({ params }: { params: { slug: string }
 
             <section className="border-t border-white/5 pt-12">
               <h2 className="text-sm font-bold tracking-widest uppercase text-emerald-accent mb-6">
-                12. Project Links
+                11. Project Links
               </h2>
               <div className="flex flex-col gap-4">
                 <p className="text-white/60">Explore the technical implementation and live version of this project:</p>
                 <div className="flex gap-4">
                   <a href={content.links.github} className="text-emerald-accent hover:underline">GitHub Repository</a>
                   <span className="text-white/20">/</span>
-                  <a href={content.links.demo} className="text-emerald-accent hover:underline">Live Implementation</a>
+                  <a href={content.links.demo} className="text-emerald-accent hover:underline">{content.links.demoLabel}</a>
                 </div>
               </div>
             </section>

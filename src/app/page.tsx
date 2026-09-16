@@ -18,10 +18,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured <span className="text-emerald-accent italic">Case Studies</span></h2>
-              <p className="text-white/40 max-w-lg">A deep dive into how I solve complex business problems using data engineering and advanced analytics.</p>
+              <p className="text-white/60 max-w-lg">The questions, methods and findings behind my analytics projects. Explore the reports, source code and working demos.</p>
             </div>
             <div className="text-white/20 text-sm font-mono uppercase tracking-widest hidden md:block">
-              [ Selected Works / 2024-2025 ]
+              [ Selected Projects ]
             </div>
           </div>
 
@@ -33,7 +33,8 @@ export default function Home() {
                 title={project.title}
                 shortDescription={project.shortDescription}
                 tech={project.tech}
-                metrics={project.metrics as any}
+                metrics={project.metrics}
+                image={project.image}
               />
             ))}
           </div>
@@ -47,7 +48,7 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold mb-8 italic text-emerald-accent">Technical Stack</h2>
               <p className="text-lg text-white/60 leading-relaxed mb-8">
-                My approach combines deep technical proficiency in SQL and Python with an architectural understanding of Data Warehousing and ETL processes. I build tools that don't just process data, but drive 40%+ operational efficiency.
+                {portfolioData.summary} I focus on checking the data, documenting assumptions and making findings easy to understand.
               </p>
               <div className="flex flex-col gap-4">
                 {portfolioData.education.map((edu, index) => (

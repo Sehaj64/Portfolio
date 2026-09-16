@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectCardProps {
   id: string;
@@ -10,9 +11,10 @@ interface ProjectCardProps {
   shortDescription: string;
   tech: string[];
   metrics: { [key: string]: string };
+  image?: { src: string; alt: string; caption: string } | null;
 }
 
-export default function ProjectCard({ id, title, shortDescription, tech, metrics }: ProjectCardProps) {
+export default function ProjectCard({ id, title, shortDescription, tech, metrics, image }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -22,6 +24,11 @@ export default function ProjectCard({ id, title, shortDescription, tech, metrics
     >
       <Link href={`/projects/${id}`} className="block">
         <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/[0.07] hover:border-white/20">
+          {image && (
+            <div className="mb-8 overflow-hidden rounded-lg border border-white/10">
+              <Image src={image.src} alt={image.alt} width={1203} height={670} sizes="(max-width: 768px) 100vw, 1200px" className="w-full h-auto" />
+            </div>
+          )}
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-8">
             <div className="flex-1">
               <div className="flex flex-wrap gap-2 mb-6">

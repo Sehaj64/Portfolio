@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sehaj Kumar — Analytics Portfolio
+
+[Portfolio](https://portfolio-sehaj64s-projects.vercel.app/) · [Resume](public/resume/Sehaj_Kumar_Data_Analyst_Resume.pdf)
+
+Seven selected projects: consumer complaint reporting, retail profitability, candidate-data reconciliation, customer churn, SkillProof AI, salary prediction and Fitbit Excel analysis. Each case study explains the business question, implementation, findings, limitations and next steps, with source and report links.
+
+![Power BI report filtered to Midwest credit reporting](public/projects/consumer-complaints.png)
+
+This screenshot shows 804 records within a dataset of 62,516 public complaints. Its original SLA labels refer to response timeliness, not independently verified contractual breaches. This independent project is not affiliated with American Express.
+
+Project content lives in `src/data/portfolio.ts`; public assets and the resume live in `public/`. Metrics reflect project evidence, not unmeasured business impact. Run `npm run lint` and `npm run build` to validate changes.
+
+Built with Next.js, React, TypeScript and Tailwind CSS.
 
 ## Getting Started
 
