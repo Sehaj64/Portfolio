@@ -94,6 +94,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </figure>
           )}
 
+          {project.gallery?.map((image) => (
+            <figure key={image.src} className="mb-16">
+              <a href={image.src} target="_blank" rel="noopener noreferrer" aria-label="Open full-size dashboard screenshot">
+                <Image src={image.src} alt={image.alt} width={1254} height={750} sizes="(max-width: 768px) 100vw, 896px" className="w-full h-auto rounded-lg border border-white/10" />
+              </a>
+              <figcaption className="text-sm text-white/60 mt-4 leading-relaxed">{image.caption}</figcaption>
+            </figure>
+          ))}
+
           <div className="space-y-16">
             {sections.map((section) => (
               <section key={section.title} className="border-t border-white/5 pt-12">

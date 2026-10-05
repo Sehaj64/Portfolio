@@ -2,6 +2,7 @@ export interface PortfolioProject {
   id: string; title: string; shortDescription: string; tech: string[];
   metrics: Record<string, string>;
   image: { src: string; alt: string; caption: string } | null;
+  gallery?: { src: string; alt: string; caption: string }[];
   content: { executiveSummary: string; businessProblem: string; myRole: string; dataset: string;
     solutionArchitecture: string; dataFlow: string; keyFeatures: string[]; results: string;
     limitations: string; nextSteps: string;
@@ -84,10 +85,15 @@ const data: {
         "finding": "2,403 untimely responses"
       },
       "image": {
-        "src": "/projects/consumer-complaints.png",
+        "src": "/projects/consumer-complaints-midwest.png",
         "alt": "Power BI report filtered to Midwest credit-reporting complaints, showing 804 complaints and a 5.22% untimely-response rate.",
         "caption": "Actual Power BI report • Midwest / credit reporting • 804 of 62,516 complaints. The original report labels untimely responses as SLA breaches; these are not independently verified contractual breaches."
       },
+      "gallery": [{
+        "src": "/projects/consumer-complaints-south.png",
+        "alt": "Power BI credit-reporting complaints filtered to South: 153 untimely responses and a 4.89% displayed rate.",
+        "caption": "South / credit reporting: complaint volume is displayed as 3K (rounded), with 153 untimely responses (4.89%) and 115 monetary-relief outcomes. Filtered snapshot, not a before/after comparison or a newly reconciled model total."
+      }],
       "content": {
         "executiveSummary": "Where are complaints concentrated, and which response delays need closer investigation? A Power BI report built from public CFPB data.",
         "businessProblem": "Complaint totals alone do not show which products, regions and recurring issues deserve closer review.",
@@ -106,7 +112,7 @@ const data: {
         "nextSteps": "Improve chart readability and document metric definitions and filter behavior before wider sharing.",
         "links": {
           "github": "https://github.com/Sehaj64/amex-operational-risk-dashboard",
-          "demo": "https://github.com/Sehaj64/amex-operational-risk-dashboard/blob/main/screenshots/2026-09-13-143932.png",
+          "demo": "https://github.com/Sehaj64/amex-operational-risk-dashboard/blob/main/screenshots/2026-10-05-midwest.png",
           "demoLabel": "View report screenshot"
         }
       }
