@@ -1,0 +1,6 @@
+# EXAMPLES ONLY: edit absolute paths, then use crontab -e as your lab user.
+# cron does not expand $HOME here because paths are deliberately explicit.
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+*/5 * * * * LOG_DIR=/home/YOUR_USER/linux-operations/logs /bin/bash /home/YOUR_USER/linux-operations/monitoring/monitor.sh >> /home/YOUR_USER/monitor-cron.log 2>&1
+0 2 * * * KEEP=7 /bin/bash /home/YOUR_USER/linux-operations/backup/backup.sh /home/YOUR_USER/lab-data /home/YOUR_USER/lab-backups >> /home/YOUR_USER/backup-cron.log 2>&1
