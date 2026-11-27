@@ -1,12 +1,14 @@
 # Linux Operations Portfolio
 
-Three reproducible Linux interview labs by Sehaj Kumar: Bash host monitoring and alerts, automated backup and recovery, and Linux user management. These are learning projects, not claims of production administration experience.
+Four reproducible Linux interview labs by Sehaj Kumar: Bash host monitoring and alerts, automated backup and recovery, Linux user management, and service/network troubleshooting. These are learning projects, not claims of production administration experience.
 
 | Project | Main implementation | Demonstrates |
 |---|---|---|
 | [Monitoring and alerts](monitoring/README.md) | Bash, `/proc`, `df`, `flock`, optional syslog | CPU sampling, memory pressure, disk thresholds, logs, exit codes |
 | [Backup and recovery](backup/README.md) | Bash, GNU tar, SHA-256 | Scheduled full backups, retention, integrity verification, safe restore |
 | [User management](user-management/README.md) | Bash, useradd, groupadd, usermod | Preview/apply, supplementary groups, password locking, account inspection |
+
+| [Service and network troubleshooting](service-networking/README.md) | systemd unit, journalctl, ss, curl, ip | Service lifecycle, logs, TCP/HTTP diagnosis (VM lifecycle pending) |
 
 ## Run the labs
 
@@ -33,6 +35,6 @@ Monitoring is host level; container CPU/memory limits are not calculated. Alerts
 
 ## Repository layout
 
-`monitoring/`, `backup/`, `user-management/`, `tests/`, `docs/`, `examples/`.
+`monitoring/`, `backup/`, `user-management/`, `service-networking/`, `tests/`, `docs/`, `examples/`.
 
 The included `.github/workflows/test.yml` works when this folder is the repository root. When hosted inside another repository, copy it to that repository's workflow folder and set the job working directory to this folder. It is a CI template until enabled there.
