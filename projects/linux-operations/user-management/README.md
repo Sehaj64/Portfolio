@@ -1,5 +1,7 @@
 # Linux User Management
 
+[Run the live Bash demo in Google Colab](https://colab.research.google.com/github/Sehaj64/Portfolio/blob/main/projects/linux-operations/user-management/live-demo.ipynb)
+
 ## Problem and implementation
 
 Routine account tasks are easy to mistype. `users.sh` validates a lab naming convention, previews the command by default, and only changes accounts when explicitly run with `--apply` as root. Mutations are limited to `opslab_` names. It supports user/group creation, supplementary group membership, password lock/unlock and read-only inspection. Existing users/groups are detected during creation; system UIDs are rejected for modifications.

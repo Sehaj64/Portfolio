@@ -1,5 +1,7 @@
 # Bash Monitoring and Alerts
 
+[Run the live Bash demo in Google Colab](https://colab.research.google.com/github/Sehaj64/Portfolio/blob/main/projects/linux-operations/monitoring/live-demo.ipynb)
+
 ## Problem and implementation
 
 A Linux operator needs a repeatable way to see resource pressure. `monitor.sh` collects an aggregate CPU utilization sample, memory usage based on MemAvailable, filesystem capacity for one configured path, 1-minute load average and uptime. It compares percentages against independently configured limits, writes timestamped key-value metrics, and records threshold alerts. `flock` prevents overlapping samples for the same log directory. A restrictive umask protects new files.

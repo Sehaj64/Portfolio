@@ -1,5 +1,7 @@
 # Automatic Backup and Recovery
 
+[Run the live Bash demo in Google Colab](https://colab.research.google.com/github/Sehaj64/Portfolio/blob/main/projects/linux-operations/backup/live-demo.ipynb)
+
 ## Problem and implementation
 
 A deleted file is recoverable only if the backup can be restored. The Bash job archives a selected directory into a separate destination, checks the tar listing, writes a SHA-256 sidecar, and keeps the latest KEEP tool-named archives. A temporary file and exclusive lock avoid partial archives and overlapping jobs. The Bash restore utility verifies bytes before extraction, validates every member, stages extraction, and publishes a fresh destination only on success.
