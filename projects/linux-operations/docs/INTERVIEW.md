@@ -16,7 +16,7 @@
 
 | Question | Answer |
 |---|---|
-| Why Bash? | Small orchestration around standard Linux tools; Python handles structured archive validation and restoration. |
+| Why Bash? | Small orchestration around standard Linux tools; Bash also orchestrates GNU tar validation and restoration. |
 | What does set -euo pipefail do? | Exit on many command failures, unset variables and failed pipeline components; it is not a substitute for explicit error checks. |
 | Why flock? | Prevent two jobs from operating on the same log/backup area simultaneously; locks are advisory. |
 | Load vs CPU? | Load includes runnable and uninterruptible tasks; utilization measures busy CPU time. Interpret load against core count and I/O conditions. |

@@ -32,7 +32,7 @@ flowchart TD
     S["Source directory"] --> B["Bash backup job"]
     C["cron"] --> B
     B --> A["Compressed archives and SHA256 sidecars"]
-    A --> R["Python restore validator"]
+    A --> R["Bash restore validator"]
     R --> D["Fresh restored directory"]
     B --> K["Retention of owned archives"]
 ```

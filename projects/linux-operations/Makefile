@@ -1,5 +1,5 @@
 test:
-	python3 -m unittest discover -s tests -v
+	bash tests/test_projects.sh
 
 syntax:
 	find . -name "*.sh" -exec bash -n {} \;
